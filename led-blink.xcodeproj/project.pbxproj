@@ -74,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB44DF7F1FD4C5A900E0B20C /* Routines */ = {
+			isa = PBXGroup;
+			children = (
+				AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */,
+				AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */,
+			);
+			path = Routines;
+			sourceTree = SOURCE_ROOT;
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,9 +149,8 @@
 		OBJ_8 /* led-blink */ = {
 			isa = PBXGroup;
 			children = (
+				AB44DF7F1FD4C5A900E0B20C /* Routines */,
 				OBJ_9 /* main.swift */,
-				AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */,
-				AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */,
 			);
 			name = "led-blink";
 			path = "Sources/led-blink";
