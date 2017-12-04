@@ -12,8 +12,8 @@ import SwiftyGPIO
  Defines a basic routine
  */
 protocol Routine: class {
-    var commandLineName: String { get }
-    var humanReadableName: String { get }
+    static var commandLineName: String { get }
+    static var humanReadableName: String { get }
     
     func start(on gpio: GPIOName)
 }

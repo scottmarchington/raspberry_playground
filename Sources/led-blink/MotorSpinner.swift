@@ -9,8 +9,14 @@ import Foundation
 import SwiftyGPIO
 
 class MotorSpinner: Routine {
-    let commandLineName: String = "motor"
-    let humanReadableName: String = "Motor Spinner"
+    static let commandLineName: String = "motor"
+    static let humanReadableName: String = "Motor Spinner"
+    
+    let gpios: [GPIOName: GPIO]
+    
+    init(_ gpios: [GPIOName: GPIO]) {
+        self.gpios = gpios
+    }
     
     func start(on gpio: GPIOName) {
         print("This routine has not been implemented yet")

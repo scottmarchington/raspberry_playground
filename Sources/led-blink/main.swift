@@ -5,9 +5,9 @@ import Foundation
 let gpios: [GPIOName: GPIO] = SwiftyGPIO.GPIOs(for: .RaspberryPi3)
 var routines: [String: Routine] = [:]
 
-// Add LEDBlinker to list of routines
-let ledBlinker: LEDBlinker = LEDBlinker(gpios)
-routines[ledBlinker.commandLineName] = ledBlinker
+// Setup routines
+routines[LEDBlinker.commandLineName] = LEDBlinker(gpios)
+routines[MotorSpinner.commandLineName] = MotorSpinner(gpios)
 
 
 print("Welcome! To quit type exit")

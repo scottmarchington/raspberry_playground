@@ -9,8 +9,8 @@ import Foundation
 import SwiftyGPIO
 
 class LEDBlinker: Routine {
-    let commandLineName: String = "blink"
-    let humanReadableName: String = "LED Blinker"
+    static let commandLineName: String = "blink"
+    static let humanReadableName: String = "LED Blinker"
     
     let gpios: [GPIOName: GPIO]
     

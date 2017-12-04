@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB44DF7D1FD4BC9800E0B20C /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */; };
 		AB44DF7E1FD4BC9C00E0B20C /* LEDBlinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */; };
-		AB44DF851FD4C97C00E0B20C /* MotorSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */; };
+		AB44DF861FD4CB0D00E0B20C /* MotorSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */; };
 		OBJ_32 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_38 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Package.swift */; };
 		OBJ_44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* main.swift */; };
@@ -273,7 +273,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_32 /* Package.swift in Sources */,
-				AB44DF851FD4C97C00E0B20C /* MotorSpinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +289,7 @@
 			buildActionMask = 0;
 			files = (
 				AB44DF7D1FD4BC9800E0B20C /* Routine.swift in Sources */,
+				AB44DF861FD4CB0D00E0B20C /* MotorSpinner.swift in Sources */,
 				OBJ_44 /* main.swift in Sources */,
 				AB44DF7E1FD4BC9C00E0B20C /* LEDBlinker.swift in Sources */,
 			);
