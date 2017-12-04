@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftyGPIO
 
 class MotorSpinner: Routine {
     let commandLineName: String = "motor"
