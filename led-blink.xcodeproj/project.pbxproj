@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB44DF7D1FD4BC9800E0B20C /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */; };
 		AB44DF7E1FD4BC9C00E0B20C /* LEDBlinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */; };
+		AB44DF851FD4C97C00E0B20C /* MotorSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */; };
 		OBJ_32 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_38 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Package.swift */; };
 		OBJ_44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* main.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.swift; sourceTree = "<group>"; };
 		AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorSpinner.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/scottmarchington/RaspberryPi/raspberry_playground/.build/checkouts/SwiftyGPIO.git-6330852604069455572/Package.swift"; sourceTree = "<group>"; };
 		OBJ_14 /* 1Wire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1Wire.swift; sourceTree = "<group>"; };
 		OBJ_15 /* ADC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADC.swift; sourceTree = "<group>"; };
@@ -78,9 +80,26 @@
 			isa = PBXGroup;
 			children = (
 				AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */,
-				AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */,
+				AB44DF811FD4C86700E0B20C /* LED Blinker */,
+				AB44DF831FD4C96500E0B20C /* Motor Spinner */,
 			);
 			name = Routines;
+			sourceTree = "<group>";
+		};
+		AB44DF811FD4C86700E0B20C /* LED Blinker */ = {
+			isa = PBXGroup;
+			children = (
+				AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */,
+			);
+			name = "LED Blinker";
+			sourceTree = "<group>";
+		};
+		AB44DF831FD4C96500E0B20C /* Motor Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */,
+			);
+			name = "Motor Spinner";
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
@@ -254,6 +273,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_32 /* Package.swift in Sources */,
+				AB44DF851FD4C97C00E0B20C /* MotorSpinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
