@@ -31,6 +31,10 @@ class MotorSpinner: Routine {
 }
 
 class MotorSpinnerWorker {
+    enum Constants {
+        static let MotorController1Address: Int = 0x60
+        static let AllControllersAddress: Int = 0x70 // for sending instructions to ALL controllers in stack
+    }
     let interface: I2CInterface
     
     init?() {
@@ -40,6 +44,8 @@ class MotorSpinnerWorker {
             
         }
         
+        print("has \(i2cs.count) interfaces")
+        
         guard i2cs.count > 1 else {
             print("Not enough interfaces (has \(i2cs.count))")
             return nil
@@ -47,16 +53,10 @@ class MotorSpinnerWorker {
         
         interface = i2cs[1]
         
-        if interface.isReachable(0x60) {
-            print("0x60 is reachable!")
+        if interface.isReachable(Constants.MotorController1Address) {
+            print("\(Constants.MotorController1Address) is reachable!")
         } else {
-            print("0x60 is not reachable")
-        }
-        
-        if interface.isReachable(0x70) {
-            print("0x70 is reachable!")
-        } else {
-            print("0x70 is not reachable")
+            print("\(Constants.MotorController1Address) is not reachable")
         }
     }
     
