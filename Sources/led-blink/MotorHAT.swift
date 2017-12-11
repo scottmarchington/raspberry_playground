@@ -42,6 +42,14 @@ class MotorHAT {
         pwm.setPWMFrequency(frequency)
     }
     
+    deinit {
+        turnOffAllMotors()
+    }
+    
+    func turnOffAllMotors() {
+        motors.forEach { $0.run(.Release) }
+    }
+    
     func setPin(_ pin: Int, value: Bool) {
         guard 0...15 ~= pin else {
             print("PWM pin must be between 0 and 15 inclusive")
