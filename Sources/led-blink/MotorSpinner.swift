@@ -53,10 +53,14 @@ class MotorSpinnerWorker {
         
         interface = i2cs[1]
         
-        if interface.isReachable(Constants.MotorController1Address) {
-            print("\(Constants.MotorController1Address) is reachable!")
-        } else {
-            print("\(Constants.MotorController1Address) is not reachable")
+        for i in 0..<i2cs.count {
+            let interface = i2cs[i]
+            
+            if interface.isReachable(Constants.MotorController1Address) {
+                print("\(Constants.MotorController1Address) on interface \(i) is reachable!")
+            } else {
+                print("\(Constants.MotorController1Address) on interface \(i)  is not reachable")
+            }
         }
     }
     
