@@ -10,6 +10,9 @@
 		AB44DF7D1FD4BC9800E0B20C /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */; };
 		AB44DF7E1FD4BC9C00E0B20C /* LEDBlinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */; };
 		AB44DF861FD4CB0D00E0B20C /* MotorSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */; };
+		AB44DF8A1FDEF2C000E0B20C /* PWM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF891FDEF2C000E0B20C /* PWM.swift */; };
+		AB44DF8C1FDEF2F900E0B20C /* MotorHAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF8B1FDEF2F900E0B20C /* MotorHAT.swift */; };
+		AB44DF8E1FDEF32300E0B20C /* DCMotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF8D1FDEF32300E0B20C /* DCMotor.swift */; };
 		OBJ_32 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_38 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Package.swift */; };
 		OBJ_44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* main.swift */; };
@@ -40,6 +43,9 @@
 		AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.swift; sourceTree = "<group>"; };
 		AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorSpinner.swift; sourceTree = "<group>"; };
+		AB44DF891FDEF2C000E0B20C /* PWM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWM.swift; sourceTree = "<group>"; };
+		AB44DF8B1FDEF2F900E0B20C /* MotorHAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorHAT.swift; sourceTree = "<group>"; };
+		AB44DF8D1FDEF32300E0B20C /* DCMotor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCMotor.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/scottmarchington/RaspberryPi/raspberry_playground/.build/checkouts/SwiftyGPIO.git-6330852604069455572/Package.swift"; sourceTree = "<group>"; };
 		OBJ_14 /* 1Wire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1Wire.swift; sourceTree = "<group>"; };
 		OBJ_15 /* ADC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADC.swift; sourceTree = "<group>"; };
@@ -100,6 +106,40 @@
 				AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */,
 			);
 			name = "Motor Spinner";
+			sourceTree = "<group>";
+		};
+		AB44DF871FDEF26500E0B20C /* Motor HAT */ = {
+			isa = PBXGroup;
+			children = (
+				AB44DF8F1FDEF4B800E0B20C /* Driver */,
+				AB44DF901FDEF4C600E0B20C /* Interfaces */,
+			);
+			name = "Motor HAT";
+			sourceTree = "<group>";
+		};
+		AB44DF8F1FDEF4B800E0B20C /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				AB44DF891FDEF2C000E0B20C /* PWM.swift */,
+			);
+			name = Driver;
+			sourceTree = "<group>";
+		};
+		AB44DF901FDEF4C600E0B20C /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				AB44DF8D1FDEF32300E0B20C /* DCMotor.swift */,
+				AB44DF8B1FDEF2F900E0B20C /* MotorHAT.swift */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		AB44DF911FDEF4DD00E0B20C /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				AB44DF871FDEF26500E0B20C /* Motor HAT */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
@@ -168,6 +208,7 @@
 		OBJ_8 /* led-blink */ = {
 			isa = PBXGroup;
 			children = (
+				AB44DF911FDEF4DD00E0B20C /* Dependencies */,
 				AB44DF801FD4C76000E0B20C /* Routines */,
 				OBJ_9 /* main.swift */,
 			);
@@ -288,10 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				AB44DF8A1FDEF2C000E0B20C /* PWM.swift in Sources */,
 				AB44DF7D1FD4BC9800E0B20C /* Routine.swift in Sources */,
 				AB44DF861FD4CB0D00E0B20C /* MotorSpinner.swift in Sources */,
+				AB44DF8C1FDEF2F900E0B20C /* MotorHAT.swift in Sources */,
 				OBJ_44 /* main.swift in Sources */,
 				AB44DF7E1FD4BC9C00E0B20C /* LEDBlinker.swift in Sources */,
+				AB44DF8E1FDEF32300E0B20C /* DCMotor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

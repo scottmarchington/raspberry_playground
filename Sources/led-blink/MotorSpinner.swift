@@ -41,7 +41,6 @@ class MotorSpinnerWorker {
         guard let i2cs = SwiftyGPIO.hardwareI2Cs(for: .RaspberryPi3) else {
             print("Couldn't find I2C interfaces")
             return nil
-            
         }
         
         print("has \(i2cs.count) interfaces")
@@ -58,9 +57,5 @@ class MotorSpinnerWorker {
         } else {
             print("\(Constants.MotorController1Address) is not reachable")
         }
-    }
-    
-    func set(to val: Float) {
-        
     }
 }
