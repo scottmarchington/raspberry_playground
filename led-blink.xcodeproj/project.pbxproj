@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB44DF991FE5D7B400E0B20C /* TestPython.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF981FE5D7B400E0B20C /* TestPython.swift */; };
 		OBJ_100 /* UART.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* UART.swift */; };
 		OBJ_106 /* PerfectPython.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* PerfectPython.swift */; };
 		OBJ_108 /* PythonAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PerfectPython::PythonAPI::Product" /* PythonAPI.framework */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB44DF981FE5D7B400E0B20C /* TestPython.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPython.swift; sourceTree = "<group>"; };
 		OBJ_10 /* LEDBlinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.swift; sourceTree = "<group>"; };
 		OBJ_11 /* LEDBlinker.temp_caseinsensitive_rename.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.temp_caseinsensitive_rename.swift; sourceTree = "<group>"; };
 		OBJ_12 /* MotorHAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorHAT.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				OBJ_14 /* PWM.swift */,
 				OBJ_15 /* Routine.swift */,
 				OBJ_16 /* main.swift */,
+				AB44DF981FE5D7B400E0B20C /* TestPython.swift */,
 			);
 			name = "led-blink";
 			path = "Sources/led-blink";
@@ -448,6 +451,7 @@
 			files = (
 				OBJ_69 /* DCMotor.swift in Sources */,
 				OBJ_70 /* LEDBlinker.swift in Sources */,
+				AB44DF991FE5D7B400E0B20C /* TestPython.swift in Sources */,
 				OBJ_71 /* LEDBlinker.temp_caseinsensitive_rename.swift in Sources */,
 				OBJ_72 /* MotorHAT.swift in Sources */,
 				OBJ_73 /* MotorSpinner.swift in Sources */,
