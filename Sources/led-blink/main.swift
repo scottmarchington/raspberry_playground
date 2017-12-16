@@ -5,8 +5,14 @@ import Foundation
 
 Py_Initialize()
 
-_ = try! TestPython()
-print("SUCCESS")
+do {
+    _ = try TestPython()
+    print("SUCCESS")
+} catch {
+    print("FAILURE")
+    print(error)
+}
+
 
 //// Get a dictionary of all the gpio pins
 //let gpios: [GPIOName: GPIO] = SwiftyGPIO.GPIOs(for: .RaspberryPi3)
