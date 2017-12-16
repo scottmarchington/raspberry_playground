@@ -54,12 +54,18 @@ class PWM {
         
         print("Resetting PCA9685 MODE1 (without SLEEP) and MODE2")
         setAllPWM(on: 0, off: 0)
+        print("PWMs all set to 0")
         i2c.writeByte(Register.MODE2, value: Bit.OUTDRV)
+        print("wrote mode2")
         i2c.writeByte(Register.MODE1, value: Bit.ALLCALL)
+        print("wrote mode1")
         usleep(5000) // wait for oscillator
+        print("slept")
         var model = i2c.readByte(Register.MODE1)
+        print("got mode1")
         model = model & ~Bit.SLEEP // wake up (reset sleep)
         i2c.writeByte(Register.MODE1, value: model)
+        print("rewrote mode 1")
         usleep(5000) // wait for oscillator
     }
     
