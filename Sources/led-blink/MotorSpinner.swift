@@ -13,6 +13,7 @@ class MotorSpinner: Routine {
     static let humanReadableName: String = "Motor Spinner"
     
     let gpios: [GPIOName: GPIO]
+    var hat: MotorHAT?
     
     init(_ gpios: [GPIOName: GPIO]) {
         self.gpios = gpios
@@ -20,42 +21,53 @@ class MotorSpinner: Routine {
     
     func start(on gpio: GPIOName) {
         print("This routine has not been implemented yet")
-        if let worker = MotorSpinnerWorker() {
-            print("worker successfully instantiated")
-            // Worker successfully instantiated
+        if let hat = MotorHAT() {
+            print("HAT successfuly instantiated")
+            self.hat = hat
+            runLoop()
         } else {
-            print("worker failed to be instantiated")
+            print("HAT failed to be instantiated")
             // Worker failed to be instantiated
         }
     }
-}
-
-class MotorSpinnerWorker {
-    enum Constants {
-        static let MotorController1Address: Int = 0x60
-        static let AllControllersAddress: Int = 0x70 // for sending instructions to ALL controllers in stack
-    }
-    let interface: I2CInterface
     
-    init?() {
-        guard let i2cs = SwiftyGPIO.hardwareI2Cs(for: .RaspberryPi3) else {
-            print("Couldn't find I2C interfaces")
-            return nil
+    func runLoop() {
+        print("Enter a number between 0 and 255 to set the motor's speed, exit to exit")
+        while
+            hat != nil,
+            let userInput = readLine(strippingNewline: true),
+            userInput != "exit" {
+                guard let newSpeed = Int(userInput) else {
+                    print("Invalid input")
+                    continue
+                }
+                updateMotorSpeed(newSpeed)
+        }
+    }
+    
+    func updateMotorSpeed(_ newSpeed: Int) {
+        guard 0...255 ~= newSpeed else {
+            print("New speed must be between 0 and 255, inclusive")
+            print("Enter a number between 0 and 255 to set the motor's speed, exit to exit")
+            return
         }
         
-        print("has \(i2cs.count) interfaces")
-        
-        guard i2cs.count > 1 else {
-            print("Not enough interfaces (has \(i2cs.count))")
-            return nil
+        guard let hat = hat else {
+            print("HAT interface no longer exists, aborting routine")
+            self.hat = nil
+            return
         }
         
-        interface = i2cs[1]
-        
-        if interface.isReachable(Constants.MotorController1Address) {
-            print("\(Constants.MotorController1Address) is reachable!")
-        } else {
-            print("\(Constants.MotorController1Address) is not reachable")
+        guard !hat.motors.isEmpty else {
+            print("HAT interface has no motors, aborting routine")
+            self.hat = nil
+            return
         }
+        
+        // for this test, we're only have motor 1 hooked up, so we'll use that.
+        let motor = hat.motors[0]
+        motor.setSpeed(newSpeed) // set speed
+        motor.run(.Forward) // set direction
+        motor.run(.Release) // turn on motor
     }
 }
