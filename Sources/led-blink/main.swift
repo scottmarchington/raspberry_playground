@@ -5,7 +5,8 @@ import Foundation
 
 Py_Initialize()
 
-
+_ = TestPython()
+print("SUCCESS")
 
 //// Get a dictionary of all the gpio pins
 //let gpios: [GPIOName: GPIO] = SwiftyGPIO.GPIOs(for: .RaspberryPi3)

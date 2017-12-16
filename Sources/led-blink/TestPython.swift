@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import PythonAPI
+import PerfectPython
 
 class TestPython {
     init() {
-        
+        let pymodule = try PyObj(path: "/Adafruit_MotorHAT/Adafruit_MotorHAT_Motors", import: "Adafruit_MotorHAT")
     }
 }
