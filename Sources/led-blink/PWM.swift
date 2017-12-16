@@ -102,7 +102,9 @@ class PWM {
     
     func setAllPWM(on: Int, off: Int) {
         print("begin set all pwm")
-        print("\(Register.ALL_LED_ON_L)")
+        print("Register: \(Register.ALL_LED_ON_L)")
+        let value = UInt8(on & 0xFF)
+        print("Value:    \(value)")
         i2c.writeByte(Register.ALL_LED_ON_L, value: UInt8(on & 0xFF))
         print("set all led on l")
         i2c.writeByte(Register.ALL_LED_ON_H, value: UInt8(on >> 8))
