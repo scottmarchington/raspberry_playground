@@ -11,9 +11,9 @@ import PerfectPython
 
 class TestPython {
     init() throws {
-        let driverModule = try PyObj(path: "./../../Sources/led-blink/Adafruit_MotorHAT", import: "Adafruit_PWM_Servo_Driver")
+        let driverModule = try PyObj(path: "./../../Sources/led-blink/Adafruit_MotorHAT", import: "__init__")
         
-        let motorModule = try PyObj(path: "./../../Sources/led-blink/Adafruit_MotorHAT", import: "Adafruit_MotorHAT_Motors")
+//        let motorModule = try PyObj(path: "./../../Sources/led-blink/Adafruit_MotorHAT", import: "Adafruit_MotorHAT_Motors")
     }
 }
 
