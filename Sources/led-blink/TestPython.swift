@@ -11,7 +11,7 @@ import PerfectPython
 
 class TestPython {
     init() throws {
-        _ = try PyObj(path: "/Sources/led-blink/Adafruit_MotorHAT", import: "Adafruit_MotorHAT_Motors")
+        _ = try PyObj(path: "./../../Sources/led-blink/Adafruit_MotorHAT", import: "Adafruit_MotorHAT_Motors")
     }
 }
 
