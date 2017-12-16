@@ -53,8 +53,9 @@ class PWM {
         }
         
         print("Resetting PCA9685 MODE1 (without SLEEP) and MODE2")
-        setAllPWM(on: 0, off: 0)
-        print("PWMs all set to 0")
+        print("Skip setallpwm, maybe it doesn't work")
+//        setAllPWM(on: 0, off: 0)
+//        print("PWMs all set to 0")
         i2c.writeByte(Register.MODE2, value: Bit.OUTDRV)
         print("wrote mode2")
         i2c.writeByte(Register.MODE1, value: Bit.ALLCALL)
