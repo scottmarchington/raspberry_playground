@@ -10,7 +10,7 @@ import PythonAPI
 import PerfectPython
 
 class TestPython {
-    init() {
+    init() throws {
         let pymodule = try PyObj(path: "/Adafruit_MotorHAT/Adafruit_MotorHAT_Motors", import: "Adafruit_MotorHAT")
     }
 }

@@ -5,7 +5,7 @@ import Foundation
 
 Py_Initialize()
 
-_ = TestPython()
+_ = try! TestPython()
 print("SUCCESS")
 
 //// Get a dictionary of all the gpio pins
