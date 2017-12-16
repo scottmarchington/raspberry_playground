@@ -11,8 +11,7 @@ let package = Package(
 	    dependencies: [ ])
         ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-	.Package(url: "https://github.com/uraimo/SwiftyGPIO.git", majorVersion: 0)
+        .Package(url: "https://github.com/PerfectlySoft/Perfect-Python.git", majorVersion: 1),
+        .Package(url: "https://github.com/uraimo/SwiftyGPIO.git", majorVersion: 0)
     ]
 )

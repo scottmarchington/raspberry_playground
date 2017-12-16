@@ -7,180 +7,215 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB44DF7D1FD4BC9800E0B20C /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */; };
-		AB44DF7E1FD4BC9C00E0B20C /* LEDBlinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */; };
-		AB44DF861FD4CB0D00E0B20C /* MotorSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */; };
-		AB44DF8A1FDEF2C000E0B20C /* PWM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF891FDEF2C000E0B20C /* PWM.swift */; };
-		AB44DF8C1FDEF2F900E0B20C /* MotorHAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF8B1FDEF2F900E0B20C /* MotorHAT.swift */; };
-		AB44DF8E1FDEF32300E0B20C /* DCMotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44DF8D1FDEF32300E0B20C /* DCMotor.swift */; };
-		OBJ_32 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_38 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Package.swift */; };
-		OBJ_44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* main.swift */; };
-		OBJ_46 /* SwiftyGPIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyGPIO::SwiftyGPIO::Product" /* SwiftyGPIO.framework */; };
-		OBJ_53 /* 1Wire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* 1Wire.swift */; };
-		OBJ_54 /* ADC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* ADC.swift */; };
-		OBJ_55 /* I2C.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* I2C.swift */; };
-		OBJ_56 /* Mailbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Mailbox.swift */; };
-		OBJ_57 /* PWM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* PWM.swift */; };
-		OBJ_58 /* Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Presets.swift */; };
-		OBJ_59 /* SPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* SPI.swift */; };
-		OBJ_60 /* SunXi.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* SunXi.swift */; };
-		OBJ_61 /* SwiftyGPIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* SwiftyGPIO.swift */; };
-		OBJ_62 /* UART.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* UART.swift */; };
+		OBJ_100 /* UART.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* UART.swift */; };
+		OBJ_106 /* PerfectPython.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* PerfectPython.swift */; };
+		OBJ_108 /* PythonAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PerfectPython::PythonAPI::Product" /* PythonAPI.framework */; };
+		OBJ_114 /* PythonAPI.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* PythonAPI.c */; };
+		OBJ_51 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_57 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Package.swift */; };
+		OBJ_63 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Package.swift */; };
+		OBJ_69 /* DCMotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DCMotor.swift */; };
+		OBJ_70 /* LEDBlinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* LEDBlinker.swift */; };
+		OBJ_71 /* LEDBlinker.temp_caseinsensitive_rename.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* LEDBlinker.temp_caseinsensitive_rename.swift */; };
+		OBJ_72 /* MotorHAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MotorHAT.swift */; };
+		OBJ_73 /* MotorSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MotorSpinner.swift */; };
+		OBJ_74 /* PWM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* PWM.swift */; };
+		OBJ_75 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Routine.swift */; };
+		OBJ_76 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* main.swift */; };
+		OBJ_78 /* SwiftyGPIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyGPIO::SwiftyGPIO::Product" /* SwiftyGPIO.framework */; };
+		OBJ_79 /* PerfectPython.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PerfectPython::PerfectPython::Product" /* PerfectPython.framework */; };
+		OBJ_80 /* PythonAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PerfectPython::PythonAPI::Product" /* PythonAPI.framework */; };
+		OBJ_91 /* 1Wire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* 1Wire.swift */; };
+		OBJ_92 /* ADC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* ADC.swift */; };
+		OBJ_93 /* I2C.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* I2C.swift */; };
+		OBJ_94 /* Mailbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Mailbox.swift */; };
+		OBJ_95 /* PWM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* PWM.swift */; };
+		OBJ_96 /* Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Presets.swift */; };
+		OBJ_97 /* SPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* SPI.swift */; };
+		OBJ_98 /* SunXi.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* SunXi.swift */; };
+		OBJ_99 /* SwiftyGPIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* SwiftyGPIO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AB44DF781FD4B91C00E0B20C /* PBXContainerItemProxy */ = {
+		AB44DF941FE5D2C500E0B20C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftyGPIO::SwiftyGPIO";
 			remoteInfo = SwiftyGPIO;
 		};
+		AB44DF951FE5D2C500E0B20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PerfectPython::PerfectPython";
+			remoteInfo = PerfectPython;
+		};
+		AB44DF961FE5D2C500E0B20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PerfectPython::PythonAPI";
+			remoteInfo = PythonAPI;
+		};
+		AB44DF971FE5D2C500E0B20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PerfectPython::PythonAPI";
+			remoteInfo = PythonAPI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.swift; sourceTree = "<group>"; };
-		AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
-		AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorSpinner.swift; sourceTree = "<group>"; };
-		AB44DF891FDEF2C000E0B20C /* PWM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWM.swift; sourceTree = "<group>"; };
-		AB44DF8B1FDEF2F900E0B20C /* MotorHAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorHAT.swift; sourceTree = "<group>"; };
-		AB44DF8D1FDEF32300E0B20C /* DCMotor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCMotor.swift; sourceTree = "<group>"; };
-		OBJ_13 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/scottmarchington/RaspberryPi/raspberry_playground/.build/checkouts/SwiftyGPIO.git-6330852604069455572/Package.swift"; sourceTree = "<group>"; };
-		OBJ_14 /* 1Wire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1Wire.swift; sourceTree = "<group>"; };
-		OBJ_15 /* ADC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADC.swift; sourceTree = "<group>"; };
-		OBJ_16 /* I2C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I2C.swift; sourceTree = "<group>"; };
-		OBJ_17 /* Mailbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mailbox.swift; sourceTree = "<group>"; };
-		OBJ_18 /* PWM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWM.swift; sourceTree = "<group>"; };
-		OBJ_19 /* Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presets.swift; sourceTree = "<group>"; };
-		OBJ_20 /* SPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPI.swift; sourceTree = "<group>"; };
-		OBJ_21 /* SunXi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunXi.swift; sourceTree = "<group>"; };
-		OBJ_22 /* SwiftyGPIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGPIO.swift; sourceTree = "<group>"; };
-		OBJ_23 /* UART.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UART.swift; sourceTree = "<group>"; };
+		OBJ_10 /* LEDBlinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.swift; sourceTree = "<group>"; };
+		OBJ_11 /* LEDBlinker.temp_caseinsensitive_rename.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.temp_caseinsensitive_rename.swift; sourceTree = "<group>"; };
+		OBJ_12 /* MotorHAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorHAT.swift; sourceTree = "<group>"; };
+		OBJ_13 /* MotorSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorSpinner.swift; sourceTree = "<group>"; };
+		OBJ_14 /* PWM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWM.swift; sourceTree = "<group>"; };
+		OBJ_15 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		OBJ_16 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Libraries; sourceTree = SOURCE_ROOT; };
+		OBJ_21 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/scottmarchington/RaspberryPi/raspberry_playground/.build/checkouts/SwiftyGPIO.git-6330852604069455572/Package.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* 1Wire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1Wire.swift; sourceTree = "<group>"; };
+		OBJ_23 /* ADC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADC.swift; sourceTree = "<group>"; };
+		OBJ_24 /* I2C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I2C.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Mailbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mailbox.swift; sourceTree = "<group>"; };
+		OBJ_26 /* PWM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWM.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presets.swift; sourceTree = "<group>"; };
+		OBJ_28 /* SPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPI.swift; sourceTree = "<group>"; };
+		OBJ_29 /* SunXi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunXi.swift; sourceTree = "<group>"; };
+		OBJ_30 /* SwiftyGPIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGPIO.swift; sourceTree = "<group>"; };
+		OBJ_31 /* UART.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UART.swift; sourceTree = "<group>"; };
+		OBJ_34 /* PythonAPI.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PythonAPI.c; sourceTree = "<group>"; };
+		OBJ_36 /* PythonAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PythonAPI.h; sourceTree = "<group>"; };
+		OBJ_37 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/scottmarchington/RaspberryPi/raspberry_playground/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include/module.modulemap"; sourceTree = "<group>"; };
+		OBJ_39 /* PerfectPython.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectPython.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/scottmarchington/RaspberryPi/raspberry_playground/.build/checkouts/Perfect-Python.git--1333346557404510047/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_9 /* DCMotor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCMotor.swift; sourceTree = "<group>"; };
+		"PerfectPython::PerfectPython::Product" /* PerfectPython.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectPython.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PerfectPython::PythonAPI::Product" /* PythonAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PythonAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftyGPIO::SwiftyGPIO::Product" /* SwiftyGPIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyGPIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"led-blink::led-blink::Product" /* led-blink */ = {isa = PBXFileReference; lastKnownFileType = text; path = "led-blink"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_45 /* Frameworks */ = {
+		OBJ_101 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_46 /* SwiftyGPIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_63 /* Frameworks */ = {
+		OBJ_107 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				OBJ_108 /* PythonAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_78 /* SwiftyGPIO.framework in Frameworks */,
+				OBJ_79 /* PerfectPython.framework in Frameworks */,
+				OBJ_80 /* PythonAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB44DF801FD4C76000E0B20C /* Routines */ = {
-			isa = PBXGroup;
-			children = (
-				AB44DF7B1FD4BB6E00E0B20C /* Routine.swift */,
-				AB44DF811FD4C86700E0B20C /* LED Blinker */,
-				AB44DF831FD4C96500E0B20C /* Motor Spinner */,
-			);
-			name = Routines;
-			sourceTree = "<group>";
-		};
-		AB44DF811FD4C86700E0B20C /* LED Blinker */ = {
-			isa = PBXGroup;
-			children = (
-				AB44DF791FD4B97D00E0B20C /* LEDBlinker.swift */,
-			);
-			name = "LED Blinker";
-			sourceTree = "<group>";
-		};
-		AB44DF831FD4C96500E0B20C /* Motor Spinner */ = {
-			isa = PBXGroup;
-			children = (
-				AB44DF841FD4C97C00E0B20C /* MotorSpinner.swift */,
-			);
-			name = "Motor Spinner";
-			sourceTree = "<group>";
-		};
-		AB44DF871FDEF26500E0B20C /* Motor HAT */ = {
-			isa = PBXGroup;
-			children = (
-				AB44DF8F1FDEF4B800E0B20C /* Driver */,
-				AB44DF901FDEF4C600E0B20C /* Interfaces */,
-			);
-			name = "Motor HAT";
-			sourceTree = "<group>";
-		};
-		AB44DF8F1FDEF4B800E0B20C /* Driver */ = {
-			isa = PBXGroup;
-			children = (
-				AB44DF891FDEF2C000E0B20C /* PWM.swift */,
-			);
-			name = Driver;
-			sourceTree = "<group>";
-		};
-		AB44DF901FDEF4C600E0B20C /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				AB44DF8D1FDEF32300E0B20C /* DCMotor.swift */,
-				AB44DF8B1FDEF2F900E0B20C /* MotorHAT.swift */,
-			);
-			name = Interfaces;
-			sourceTree = "<group>";
-		};
-		AB44DF911FDEF4DD00E0B20C /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				AB44DF871FDEF26500E0B20C /* Motor HAT */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_10 /* Tests */ = {
+		OBJ_17 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_11 /* Dependencies */ = {
+		OBJ_19 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* SwiftyGPIO 0.9.11 */,
+				OBJ_20 /* SwiftyGPIO 0.9.11 */,
+				OBJ_32 /* PerfectPython 1.0.8 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_12 /* SwiftyGPIO 0.9.11 */ = {
+		OBJ_20 /* SwiftyGPIO 0.9.11 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* Package.swift */,
-				OBJ_14 /* 1Wire.swift */,
-				OBJ_15 /* ADC.swift */,
-				OBJ_16 /* I2C.swift */,
-				OBJ_17 /* Mailbox.swift */,
-				OBJ_18 /* PWM.swift */,
-				OBJ_19 /* Presets.swift */,
-				OBJ_20 /* SPI.swift */,
-				OBJ_21 /* SunXi.swift */,
-				OBJ_22 /* SwiftyGPIO.swift */,
-				OBJ_23 /* UART.swift */,
+				OBJ_21 /* Package.swift */,
+				OBJ_22 /* 1Wire.swift */,
+				OBJ_23 /* ADC.swift */,
+				OBJ_24 /* I2C.swift */,
+				OBJ_25 /* Mailbox.swift */,
+				OBJ_26 /* PWM.swift */,
+				OBJ_27 /* Presets.swift */,
+				OBJ_28 /* SPI.swift */,
+				OBJ_29 /* SunXi.swift */,
+				OBJ_30 /* SwiftyGPIO.swift */,
+				OBJ_31 /* UART.swift */,
 			);
 			name = "SwiftyGPIO 0.9.11";
 			path = ".build/checkouts/SwiftyGPIO.git-6330852604069455572/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_24 /* Products */ = {
+		OBJ_32 /* PerfectPython 1.0.8 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* PythonAPI */,
+				OBJ_38 /* PerfectPython */,
+				OBJ_40 /* Package.swift */,
+			);
+			name = "PerfectPython 1.0.8";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_33 /* PythonAPI */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_34 /* PythonAPI.c */,
+				OBJ_35 /* include */,
+			);
+			name = PythonAPI;
+			path = ".build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* PythonAPI.h */,
+				OBJ_37 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_38 /* PerfectPython */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* PerfectPython.swift */,
+			);
+			name = PerfectPython;
+			path = ".build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PerfectPython";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"led-blink::led-blink::Product" /* led-blink */,
 				"SwiftyGPIO::SwiftyGPIO::Product" /* SwiftyGPIO.framework */,
+				"PerfectPython::PerfectPython::Product" /* PerfectPython.framework */,
+				"PerfectPython::PythonAPI::Product" /* PythonAPI.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -190,9 +225,10 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_10 /* Tests */,
-				OBJ_11 /* Dependencies */,
-				OBJ_24 /* Products */,
+				OBJ_17 /* Tests */,
+				OBJ_18 /* Libraries */,
+				OBJ_19 /* Dependencies */,
+				OBJ_41 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -208,9 +244,14 @@
 		OBJ_8 /* led-blink */ = {
 			isa = PBXGroup;
 			children = (
-				AB44DF911FDEF4DD00E0B20C /* Dependencies */,
-				AB44DF801FD4C76000E0B20C /* Routines */,
-				OBJ_9 /* main.swift */,
+				OBJ_9 /* DCMotor.swift */,
+				OBJ_10 /* LEDBlinker.swift */,
+				OBJ_11 /* LEDBlinker.temp_caseinsensitive_rename.swift */,
+				OBJ_12 /* MotorHAT.swift */,
+				OBJ_13 /* MotorSpinner.swift */,
+				OBJ_14 /* PWM.swift */,
+				OBJ_15 /* Routine.swift */,
+				OBJ_16 /* main.swift */,
 			);
 			name = "led-blink";
 			path = "Sources/led-blink";
@@ -219,11 +260,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		"PerfectPython::PerfectPython" /* PerfectPython */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_102 /* Build configuration list for PBXNativeTarget "PerfectPython" */;
+			buildPhases = (
+				OBJ_105 /* Sources */,
+				OBJ_107 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_109 /* PBXTargetDependency */,
+			);
+			name = PerfectPython;
+			productName = PerfectPython;
+			productReference = "PerfectPython::PerfectPython::Product" /* PerfectPython.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"PerfectPython::PythonAPI" /* PythonAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_110 /* Build configuration list for PBXNativeTarget "PythonAPI" */;
+			buildPhases = (
+				OBJ_113 /* Sources */,
+				OBJ_115 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PythonAPI;
+			productName = PythonAPI;
+			productReference = "PerfectPython::PythonAPI::Product" /* PythonAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"PerfectPython::SwiftPMPackageDescription" /* PerfectPythonPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_59 /* Build configuration list for PBXNativeTarget "PerfectPythonPackageDescription" */;
+			buildPhases = (
+				OBJ_62 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerfectPythonPackageDescription;
+			productName = PerfectPythonPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
 		"SwiftyGPIO::SwiftPMPackageDescription" /* SwiftyGPIOPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_34 /* Build configuration list for PBXNativeTarget "SwiftyGPIOPackageDescription" */;
+			buildConfigurationList = OBJ_53 /* Build configuration list for PBXNativeTarget "SwiftyGPIOPackageDescription" */;
 			buildPhases = (
-				OBJ_37 /* Sources */,
+				OBJ_56 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -235,10 +323,10 @@
 		};
 		"SwiftyGPIO::SwiftyGPIO" /* SwiftyGPIO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_49 /* Build configuration list for PBXNativeTarget "SwiftyGPIO" */;
+			buildConfigurationList = OBJ_87 /* Build configuration list for PBXNativeTarget "SwiftyGPIO" */;
 			buildPhases = (
-				OBJ_52 /* Sources */,
-				OBJ_63 /* Frameworks */,
+				OBJ_90 /* Sources */,
+				OBJ_101 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,9 +339,9 @@
 		};
 		"led-blink::SwiftPMPackageDescription" /* led-blinkPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_28 /* Build configuration list for PBXNativeTarget "led-blinkPackageDescription" */;
+			buildConfigurationList = OBJ_47 /* Build configuration list for PBXNativeTarget "led-blinkPackageDescription" */;
 			buildPhases = (
-				OBJ_31 /* Sources */,
+				OBJ_50 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -265,15 +353,17 @@
 		};
 		"led-blink::led-blink" /* led-blink */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_40 /* Build configuration list for PBXNativeTarget "led-blink" */;
+			buildConfigurationList = OBJ_65 /* Build configuration list for PBXNativeTarget "led-blink" */;
 			buildPhases = (
-				OBJ_43 /* Sources */,
-				OBJ_45 /* Frameworks */,
+				OBJ_68 /* Sources */,
+				OBJ_77 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_47 /* PBXTargetDependency */,
+				OBJ_81 /* PBXTargetDependency */,
+				OBJ_83 /* PBXTargetDependency */,
+				OBJ_85 /* PBXTargetDependency */,
 			);
 			name = "led-blink";
 			productName = led_blink;
@@ -296,85 +386,219 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_24 /* Products */;
+			productRefGroup = OBJ_41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				"led-blink::SwiftPMPackageDescription" /* led-blinkPackageDescription */,
 				"SwiftyGPIO::SwiftPMPackageDescription" /* SwiftyGPIOPackageDescription */,
+				"PerfectPython::SwiftPMPackageDescription" /* PerfectPythonPackageDescription */,
 				"led-blink::led-blink" /* led-blink */,
 				"SwiftyGPIO::SwiftyGPIO" /* SwiftyGPIO */,
+				"PerfectPython::PerfectPython" /* PerfectPython */,
+				"PerfectPython::PythonAPI" /* PythonAPI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_31 /* Sources */ = {
+		OBJ_105 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_32 /* Package.swift in Sources */,
+				OBJ_106 /* PerfectPython.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_37 /* Sources */ = {
+		OBJ_113 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_38 /* Package.swift in Sources */,
+				OBJ_114 /* PythonAPI.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_43 /* Sources */ = {
+		OBJ_50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				AB44DF8A1FDEF2C000E0B20C /* PWM.swift in Sources */,
-				AB44DF7D1FD4BC9800E0B20C /* Routine.swift in Sources */,
-				AB44DF861FD4CB0D00E0B20C /* MotorSpinner.swift in Sources */,
-				AB44DF8C1FDEF2F900E0B20C /* MotorHAT.swift in Sources */,
-				OBJ_44 /* main.swift in Sources */,
-				AB44DF7E1FD4BC9C00E0B20C /* LEDBlinker.swift in Sources */,
-				AB44DF8E1FDEF32300E0B20C /* DCMotor.swift in Sources */,
+				OBJ_51 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_52 /* Sources */ = {
+		OBJ_56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_53 /* 1Wire.swift in Sources */,
-				OBJ_54 /* ADC.swift in Sources */,
-				OBJ_55 /* I2C.swift in Sources */,
-				OBJ_56 /* Mailbox.swift in Sources */,
-				OBJ_57 /* PWM.swift in Sources */,
-				OBJ_58 /* Presets.swift in Sources */,
-				OBJ_59 /* SPI.swift in Sources */,
-				OBJ_60 /* SunXi.swift in Sources */,
-				OBJ_61 /* SwiftyGPIO.swift in Sources */,
-				OBJ_62 /* UART.swift in Sources */,
+				OBJ_57 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_63 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_69 /* DCMotor.swift in Sources */,
+				OBJ_70 /* LEDBlinker.swift in Sources */,
+				OBJ_71 /* LEDBlinker.temp_caseinsensitive_rename.swift in Sources */,
+				OBJ_72 /* MotorHAT.swift in Sources */,
+				OBJ_73 /* MotorSpinner.swift in Sources */,
+				OBJ_74 /* PWM.swift in Sources */,
+				OBJ_75 /* Routine.swift in Sources */,
+				OBJ_76 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_91 /* 1Wire.swift in Sources */,
+				OBJ_92 /* ADC.swift in Sources */,
+				OBJ_93 /* I2C.swift in Sources */,
+				OBJ_94 /* Mailbox.swift in Sources */,
+				OBJ_95 /* PWM.swift in Sources */,
+				OBJ_96 /* Presets.swift in Sources */,
+				OBJ_97 /* SPI.swift in Sources */,
+				OBJ_98 /* SunXi.swift in Sources */,
+				OBJ_99 /* SwiftyGPIO.swift in Sources */,
+				OBJ_100 /* UART.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_47 /* PBXTargetDependency */ = {
+		OBJ_109 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PerfectPython::PythonAPI" /* PythonAPI */;
+			targetProxy = AB44DF961FE5D2C500E0B20C /* PBXContainerItemProxy */;
+		};
+		OBJ_81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyGPIO::SwiftyGPIO" /* SwiftyGPIO */;
-			targetProxy = AB44DF781FD4B91C00E0B20C /* PBXContainerItemProxy */;
+			targetProxy = AB44DF941FE5D2C500E0B20C /* PBXContainerItemProxy */;
+		};
+		OBJ_83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PerfectPython::PerfectPython" /* PerfectPython */;
+			targetProxy = AB44DF951FE5D2C500E0B20C /* PBXContainerItemProxy */;
+		};
+		OBJ_85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PerfectPython::PythonAPI" /* PythonAPI */;
+			targetProxy = AB44DF971FE5D2C500E0B20C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_29 /* Debug */ = {
+		OBJ_103 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include",
+				);
+				INFOPLIST_FILE = "led-blink.xcodeproj/PerfectPython_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = PerfectPython;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PerfectPython;
 			};
 			name = Debug;
+		};
+		OBJ_104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include",
+				);
+				INFOPLIST_FILE = "led-blink.xcodeproj/PerfectPython_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = PerfectPython;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PerfectPython;
+			};
+			name = Release;
+		};
+		OBJ_111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include",
+				);
+				INFOPLIST_FILE = "led-blink.xcodeproj/PythonAPI_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PythonAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = PythonAPI;
+			};
+			name = Debug;
+		};
+		OBJ_112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include",
+				);
+				INFOPLIST_FILE = "led-blink.xcodeproj/PythonAPI_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PythonAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = PythonAPI;
+			};
+			name = Release;
 		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -398,33 +622,6 @@
 			};
 			name = Debug;
 		};
-		OBJ_30 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,18 +642,75 @@
 			};
 			name = Release;
 		};
-		OBJ_41 /* Debug */ = {
+		OBJ_48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include",
+				);
 				INFOPLIST_FILE = "led-blink.xcodeproj/led_blink_Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include/module.modulemap";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
 				SWIFT_VERSION = 3.0;
@@ -464,18 +718,21 @@
 			};
 			name = Debug;
 		};
-		OBJ_42 /* Release */ = {
+		OBJ_67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include",
+				);
 				INFOPLIST_FILE = "led-blink.xcodeproj/led_blink_Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-Python.git--1333346557404510047/Sources/PythonAPI/include/module.modulemap";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
 				SWIFT_VERSION = 3.0;
@@ -483,7 +740,7 @@
 			};
 			name = Release;
 		};
-		OBJ_50 /* Debug */ = {
+		OBJ_88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -505,7 +762,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_51 /* Release */ = {
+		OBJ_89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -530,6 +787,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		OBJ_102 /* Build configuration list for PBXNativeTarget "PerfectPython" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_103 /* Debug */,
+				OBJ_104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_110 /* Build configuration list for PBXNativeTarget "PythonAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_111 /* Debug */,
+				OBJ_112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "led-blink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -539,38 +814,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_28 /* Build configuration list for PBXNativeTarget "led-blinkPackageDescription" */ = {
+		OBJ_47 /* Build configuration list for PBXNativeTarget "led-blinkPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_29 /* Debug */,
-				OBJ_30 /* Release */,
+				OBJ_48 /* Debug */,
+				OBJ_49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_34 /* Build configuration list for PBXNativeTarget "SwiftyGPIOPackageDescription" */ = {
+		OBJ_53 /* Build configuration list for PBXNativeTarget "SwiftyGPIOPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_35 /* Debug */,
-				OBJ_36 /* Release */,
+				OBJ_54 /* Debug */,
+				OBJ_55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_40 /* Build configuration list for PBXNativeTarget "led-blink" */ = {
+		OBJ_59 /* Build configuration list for PBXNativeTarget "PerfectPythonPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_41 /* Debug */,
-				OBJ_42 /* Release */,
+				OBJ_60 /* Debug */,
+				OBJ_61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_49 /* Build configuration list for PBXNativeTarget "SwiftyGPIO" */ = {
+		OBJ_65 /* Build configuration list for PBXNativeTarget "led-blink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_50 /* Debug */,
-				OBJ_51 /* Release */,
+				OBJ_66 /* Debug */,
+				OBJ_67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_87 /* Build configuration list for PBXNativeTarget "SwiftyGPIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_88 /* Debug */,
+				OBJ_89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "PerfectPython",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-Python.git",
+        "state": {
+          "branch": null,
+          "revision": "7af7b292d0fe35a692416726640ef456ee450337",
+          "version": "1.0.8"
+        }
+      },
+      {
         "package": "SwiftyGPIO",
         "repositoryURL": "https://github.com/uraimo/SwiftyGPIO.git",
         "state": {
