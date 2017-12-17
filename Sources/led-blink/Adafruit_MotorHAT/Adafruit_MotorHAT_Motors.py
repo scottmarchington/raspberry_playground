@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import time
 
 from Adafruit_MotorHAT.Adafruit_PWM_Servo_Driver import PWM
