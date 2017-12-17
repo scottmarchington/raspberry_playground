@@ -1,6 +1,7 @@
 
 class TestClass:
-    __init__(self, first, second):
-        self.testVar = first
-        self.otherVar = second
+    def __init__(self, controller, num, steps=200):
+        self.MC = controller
+        self.testVar = num
+        self.otherVar = steps
 
