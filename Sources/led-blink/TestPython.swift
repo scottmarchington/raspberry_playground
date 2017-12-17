@@ -15,13 +15,22 @@ class TestPython {
         let baseModule = try PyObj(import: "Adafruit_MotorHAT")
         
         print("Load Motors Module")
-        let motorsModule = baseModule.load("Adafruit_MotorHAT_Motors")
+        guard let motorsModule = baseModule.load("Adafruit_MotorHAT_Motors") else {
+            print("Failed to load Motors module")
+            return
+        }
         
         print("Load fake thing")
-        let fakeModule = motorsModule.load("AdaScott_McScottScott")
+        if let fakeModule = motorsModule.load("AdaScott_McScottScott") {
+            print("found fake module?")
+            return
+        }
         
         print("Load hat class")
-        let motorHatClass = motorsModule?.load("Adafruit_MotorHAT")
+        guard let motorHatClass = motorsModule.load("Adafruit_MotorHAT") else {
+            print("Failed to load Adafruit_MotorHAT class")
+            return
+        }
         
         print("would be cool if this all worked")
     }
