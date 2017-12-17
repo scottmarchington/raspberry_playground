@@ -11,9 +11,19 @@ import PerfectPython
 
 class TestPython {
     init() throws {
-        let driverModule = try PyObj(path: "./../../Sources/led-blink/Adafruit_MotorHAT", import: "test")
+        print("Load base module")
+        let baseModule = try PyObj(import: "Adafruit_MotorHAT")
         
-//        let motorModule = try PyObj(path: "./../../Sources/led-blink/Adafruit_MotorHAT", import: "Adafruit_MotorHAT_Motors")
+        print("Load Motors Module")
+        let motorsModule = baseModule.load("Adafruit_MotorHAT_Motors")
+        
+        print("Load fake thing")
+        let fakeModule = motorsModule.load("AdaScott_McScottScott")
+        
+        print("Load hat class")
+        let motorHatClass = motorsModule?.load("Adafruit_MotorHAT")
+        
+        print("would be cool if this all worked")
     }
 }
 
