@@ -30,8 +30,13 @@ class TestPython {
         
         
         print("Load hat class")
-        guard let motorHatClass = motorsModule.load("Adafruit_MotorHAT.Adafruit_MotorHAT_Motors.Adafruit_MotorHAT") else {
+        guard let motorHatClass = motorsModule.load("Adafruit_MotorHAT") else {
             print("Failed to load Adafruit_MotorHAT class")
+            return
+        }
+        
+        if let paradox = motorHatClass.load("Adafruit_MotorHAT_Motors") {
+            print("What a time to be alive, we've been going in circles")
             return
         }
         
