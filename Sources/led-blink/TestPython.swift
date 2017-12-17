@@ -40,8 +40,13 @@ class TestPython {
             return
         }
         
-        guard let motorHat = motorHatClass.construct() else {
-            print("Failed to init class")
+        if motorHatClass.construct() == nil {
+            print("Failed to init class with empty constructor")
+        }
+        
+        
+        guard let motorHat = motorHatClass.construct([0x60, 1600, 0, 0]) else {
+            print ("Failed to init class with all values")
             return
         }
         
