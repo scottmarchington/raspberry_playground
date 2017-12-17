@@ -1,6 +1,6 @@
 
 class TestClass:
-    __init__(self):
-        self.testVar = 1
-        self.otherVar = 2
+    __init__(self, first, second):
+        self.testVar = first
+        self.otherVar = second
 
