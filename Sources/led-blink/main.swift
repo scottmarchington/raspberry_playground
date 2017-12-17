@@ -5,12 +5,10 @@ import Foundation
 
 Py_Initialize()
 
-do {
-    _ = try TestPython()
+if let result = try? TestPython() {
     print("SUCCESS")
-} catch {
+} else {
     print("FAILURE")
-    print(error)
 }
 
 
