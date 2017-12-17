@@ -73,6 +73,7 @@
 		AB44DF9C1FE5D99000E0B20C /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
 		AB44DF9D1FE5D99000E0B20C /* Adafruit_PWM_Servo_Driver.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Adafruit_PWM_Servo_Driver.py; sourceTree = "<group>"; };
 		AB44DF9E1FE5D99000E0B20C /* Adafruit_MotorHAT_Motors.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Adafruit_MotorHAT_Motors.py; sourceTree = "<group>"; };
+		AB44DF9F1FE5FE0F00E0B20C /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
 		OBJ_10 /* LEDBlinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.swift; sourceTree = "<group>"; };
 		OBJ_11 /* LEDBlinker.temp_caseinsensitive_rename.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.temp_caseinsensitive_rename.swift; sourceTree = "<group>"; };
 		OBJ_12 /* MotorHAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorHAT.swift; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				AB44DF9C1FE5D99000E0B20C /* __init__.py */,
+				AB44DF9F1FE5FE0F00E0B20C /* test.py */,
 				AB44DF9D1FE5D99000E0B20C /* Adafruit_PWM_Servo_Driver.py */,
 				AB44DF9E1FE5D99000E0B20C /* Adafruit_MotorHAT_Motors.py */,
 			);
