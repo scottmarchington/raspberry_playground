@@ -21,14 +21,22 @@ class TestPython {
         }
         
         print("Load fake thing")
-        if let fakeModule = motorsModule.load("AdaScott_McScottScott") {
+        if let fakeModule = motorsModule.load("AdaScott_McScottScott"),
+            let fakeObject = fakeModule.construct() {
             print("found fake module?")
             return
         }
         
+        
+        
         print("Load hat class")
         guard let motorHatClass = motorsModule.load("Adafruit_MotorHAT") else {
             print("Failed to load Adafruit_MotorHAT class")
+            return
+        }
+        
+        guard let motorHat = motorHatClass.construct() else {
+            print("Failed to init class")
             return
         }
         
