@@ -45,9 +45,10 @@ class TestPython {
         }
         
         
-        guard let motorHat = motorHatClass.construct([0x60, 1600, 0, 0]) else {
-            print ("Failed to init class with all values")
-            return
+        if let motorHat = motorHatClass.construct([0x60, 1600, 0, 0]) {
+            print("Init class with all values")
+        } else {
+            print("Failed to init class with all values")
         }
         
         let testModule = try PyObj(path: "../../Sources/led-blink/Adafruit_MotorHAT", import: "test")
