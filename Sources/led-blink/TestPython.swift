@@ -45,7 +45,7 @@ class TestPython {
         }
         
         
-        if let motorHat = motorHatClass.construct([0x60, 1600, 0, 0]) {
+        if let motorHat = motorHatClass.construct([]) {
             print("Init class with all values")
         } else {
             print("Failed to init class with all values")
