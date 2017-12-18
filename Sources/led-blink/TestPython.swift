@@ -67,6 +67,18 @@ class TestPython {
             print("Failed to init class")
         }
         
+        print("Loading Container")
+        guard let ourContainerClass = testModule.load("MotorContainer") else {
+            print("Failed to load MotorContainer")
+            return
+        }
+        
+        if let motorContainer = ourContainerClass.construct() {
+            print("Successfully constructed MotorContainer")
+        } else {
+            print("Failed to construct MotorContainer")
+        }
+        
         print("would be cool if this all worked")
     }
 }
