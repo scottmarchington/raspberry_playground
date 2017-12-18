@@ -55,7 +55,7 @@ class TestPython {
         let testModule = try PyObj(path: "../../Sources/led-blink/Adafruit_MotorHAT", import: "test")
         print("After getting test module")
         
-        guard let motorInstance = testModule.call("makeHAT", args: [0x60, 1600]) else {
+        guard let motorInstance = testModule.call("makeHAT") else {
             print("Not sure what to expect here, maybe the call failed?")
             return
         }
