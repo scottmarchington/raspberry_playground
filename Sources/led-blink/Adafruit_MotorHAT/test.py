@@ -1,7 +1,4 @@
+from Adafruit_MotorHAT.Adafruit_MotorHAT_Motors import Adafruit_StepperMotor, Adafruit_DCMotor, Adafruit_MotorHAT
 
-class TestClass:
-    def __init__(self, controller, num, steps=200):
-        self.MC = controller
-        self.testVar = num
-        self.otherVar = steps
-
+def makeHAT(address, freq):
+    return Adafruit_MotorHAT(address, freq, None, None)
