@@ -55,13 +55,17 @@ class TestPython {
         let testModule = try PyObj(path: "../../Sources/led-blink/Adafruit_MotorHAT", import: "test")
         print("After getting test module")
         
-        guard let motorInstance = testModule.call("makeHAT") else {
-            print("Not sure what to expect here, maybe the call failed?")
+        print("Loading MotorHAT subclass")
+        guard let ourMotorHATClass = testModule.load("MotorHAT") else {
+            print("Failed to load MotorHAT")
             return
         }
         
-        print(type(of: motorInstance))
-            
+        if let motorHAT = ourMotorHATClass.construct() {
+            print("Init class!")
+        } else {
+            print("Failed to init class")
+        }
         
         print("would be cool if this all worked")
     }
