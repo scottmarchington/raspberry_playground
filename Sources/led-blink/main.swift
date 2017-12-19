@@ -5,29 +5,25 @@ import Foundation
 
 Py_Initialize()
 
-if let result = try? TestPython() {
+if let _ = try? TestPython() {
     print("SUCCESS")
 } else {
     print("FAILURE")
 }
 
+var routines: [String: Routine] = [:]
 
-//// Get a dictionary of all the gpio pins
-//let gpios: [GPIOName: GPIO] = SwiftyGPIO.GPIOs(for: .RaspberryPi3)
-//var routines: [String: Routine] = [:]
-//
-//// Setup routines
-//routines[LEDBlinker.commandLineName] = LEDBlinker(gpios)
-//routines[MotorSpinner.commandLineName] = MotorSpinner(gpios)
-//
-//
-//print("Welcome! To quit type exit")
-//while let userInput = readLine(strippingNewline: true),
-//    userInput != "exit" {
-//        if let routine = routines[userInput] {
-//            routine.start(on: .P27)
-//        } else {
-//            print("Unrecognized routine")
-//        }
-//}
+// Setup routines
+routines[MotorSpinner.commandLineName] = try MotorSpinner()
+
+
+print("Welcome! To quit type exit")
+while let userInput = readLine(strippingNewline: true),
+    userInput != "exit" {
+        if let routine = routines[userInput] {
+            routine.start()
+        } else {
+            print("Unrecognized routine")
+        }
+}
 
