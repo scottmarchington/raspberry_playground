@@ -55,29 +55,35 @@ class TestPython {
         let testModule = try PyObj(path: "../../Sources/led-blink/Adafruit_MotorHAT", import: "test")
         print("After getting test module")
         
-        print("Loading MotorHAT subclass")
-        guard let ourMotorHATClass = testModule.load("MotorHAT") else {
+        print("Loading HATFactory class")
+        guard let ourMotorHATClass = testModule.load("HATFactory") else {
             print("Failed to load MotorHAT")
             return
         }
         
-        if let motorHAT = ourMotorHATClass.construct() {
-            print("Init class!")
+        if let factoryHAT = ourMotorHATClass.call("makeHAT") {
+            print("MADE A HAT")
         } else {
-            print("Failed to init class")
+            print("Didn't make a HAT")
         }
         
-        print("Loading Container")
-        guard let ourContainerClass = testModule.load("MotorContainer") else {
-            print("Failed to load MotorContainer")
-            return
-        }
-        
-        if let motorContainer = ourContainerClass.construct() {
-            print("Successfully constructed MotorContainer")
-        } else {
-            print("Failed to construct MotorContainer")
-        }
+//        if let motorHAT = ourMotorHATClass.construct() {
+//            print("Init class!")
+//        } else {
+//            print("Failed to init class")
+//        }
+//
+//        print("Loading Container")
+//        guard let ourContainerClass = testModule.load("MotorContainer") else {
+//            print("Failed to load MotorContainer")
+//            return
+//        }
+//
+//        if let motorContainer = ourContainerClass.construct() {
+//            print("Successfully constructed MotorContainer")
+//        } else {
+//            print("Failed to construct MotorContainer")
+//        }
         
         print("would be cool if this all worked")
     }
