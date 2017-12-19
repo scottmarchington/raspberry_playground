@@ -22,6 +22,10 @@ class MotorSpinner: Routine {
         runLoop()
     }
     
+    func stop() {
+        hat?.reset()
+    }
+    
     func runLoop() {
         print("Enter a number between 0 and 255 to set the motor's speed, exit to exit")
         while
