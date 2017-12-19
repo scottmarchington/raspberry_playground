@@ -61,8 +61,7 @@ class MotorSpinner: Routine {
         
         motor.run(.Forward) // set direction
         motor.setSpeed(newSpeed) // set speed
-        sleep(1)
-        motor.run(.Release) // turn on motor
-        
+//        sleep(1)
+//        motor.run(.Release) // turn on motor
     }
 }
