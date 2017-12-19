@@ -28,7 +28,7 @@ class TestPython {
         }
         
         print("Constructing HAT")
-        guard let motorHAT = motorHATClass.construct([0x60, 1600]) else {
+        guard let motorHAT = motorHATClass.construct([0x00, 1600]) else {
             print("Failed to init class with filled constructor")
             return
         }
