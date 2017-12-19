@@ -57,8 +57,12 @@ class MotorSpinner: Routine {
         
         // for this test, we're only have motor 3 hooked up, so we'll use that.
         let motor = hat.motors[2]
-        motor.setSpeed(newSpeed) // set speed
+        
+        
         motor.run(.Forward) // set direction
+        motor.setSpeed(newSpeed) // set speed
+        sleep(1)
         motor.run(.Release) // turn on motor
+        
     }
 }
