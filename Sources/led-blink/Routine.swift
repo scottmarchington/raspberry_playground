@@ -15,5 +15,5 @@ protocol Routine: class {
     static var commandLineName: String { get }
     static var humanReadableName: String { get }
     
-    func start(on gpio: GPIOName)
+    func start()
 }

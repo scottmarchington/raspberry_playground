@@ -12,23 +12,14 @@ class MotorSpinner: Routine {
     static let commandLineName: String = "motor"
     static let humanReadableName: String = "Motor Spinner"
     
-    let gpios: [GPIOName: GPIO]
     var hat: MotorHAT?
     
-    init(_ gpios: [GPIOName: GPIO]) {
-        self.gpios = gpios
+    init?() throws {
+        hat = try MotorHAT()
     }
     
-    func start(on gpio: GPIOName) {
-        print("This routine has not been implemented yet")
-        if let hat = MotorHAT() {
-            print("HAT successfuly instantiated")
-            self.hat = hat
-            runLoop()
-        } else {
-            print("HAT failed to be instantiated")
-            // Worker failed to be instantiated
-        }
+    func start() {
+        runLoop()
     }
     
     func runLoop() {

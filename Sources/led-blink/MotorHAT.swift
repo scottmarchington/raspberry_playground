@@ -8,58 +8,75 @@
 //  Commit f9e7c2592c5c720207b4e5040eb28e1628b48f49
 //  Thanks, Adafruit!
 
+import PerfectPython
+
 class MotorHAT {
-    enum Command {
-        case Forward
-        case Backward
-        case Brake
-        case Release
+    
+    enum HATErrors: Error {
+        case FailedToLoadModule
+        case FailedToLoadClass
+        case FailedToInitClass
         
-        case Single
-        case Double
-        case Interleave
-        case Microstep
+        case MissingPWM
+    }
+    
+    private enum Constants {
+        static let containerModuleName: String = "Adafruit_MotorHAT"
+        static let motorsModuleName: String = "Adafruit_MotorHAT_Motors"
+        static let motorHATClass: String = "Adafruit_MotorHAT"
+    }
+    
+    enum Command: Int {
+        case Forward = 1
+        case Backward = 2
+        case Brake = 3
+        case Release = 4
     }
     
     let frequency: Int
-    let pwm: PWM
     var motors: [DCMotor]!
     
-    init?(_ address: Int = 0x60, frequency: Int = 1600) {
-        guard let pwm = PWM(address) else {
-            print("Unable to instantiated PWM")
-            return nil
+    var pyObj: PyObj
+    
+    init(_ address: Int = 0x60, frequency: Int = 1600) throws {
+        let baseModule = try PyObj(import: Constants.containerModuleName)
+        
+        guard let motorsModule = baseModule.load(Constants.motorsModuleName) else {
+            print("Failed to load Motors module")
+            throw HATErrors.FailedToLoadModule
         }
         
+        guard let motorHATClass = motorsModule.load(Constants.motorHATClass) else {
+            print("Failed to load Adafruit_MotorHAT class")
+            throw HATErrors.FailedToLoadClass
+        }
+        
+        print("Constructing HAT")
+        guard let motorHAT = motorHATClass.construct([0x00, 1600]) else {
+            print("Failed to init class with filled constructor")
+            throw HATErrors.FailedToInitClass
+        }
+        
+        self.pyObj = motorHAT
         self.frequency = frequency
-        self.pwm = pwm
         
-        // Instantiate Motors as needed
-        motors = DCMotor.allMotors(for: self)
-        
-        // Don't care about steppers for now
-        
-        pwm.setPWMFrequency(frequency)
+        motors = (1...4).flatMap { DCMotor(getMotor($0), motorID: $0) }
     }
     
     deinit {
         turnOffAllMotors()
     }
     
+    func setPin(_ pin: Int, value: Bool) {
+        _ = pyObj.call("setPin", args: [pin, value])
+    }
+    
     func turnOffAllMotors() {
         motors.forEach { $0.run(.Release) }
     }
     
-    func setPin(_ pin: Int, value: Bool) {
-        guard 0...15 ~= pin else {
-            print("PWM pin must be between 0 and 15 inclusive")
-            return
-        }
-        
-        if value {
-            pwm.setPWM(pin, on: 4096, off: 0)
-        } else {
-            pwm.setPWM(pin, on: 0, off: 4096)
-        }
+    func getMotor(_ identifier: Int) -> PyObj? {
+        return pyObj.call("getMotor", args: [identifier])
     }
 }
+

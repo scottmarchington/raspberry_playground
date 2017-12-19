@@ -16,11 +16,8 @@
 		OBJ_57 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Package.swift */; };
 		OBJ_63 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Package.swift */; };
 		OBJ_69 /* DCMotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DCMotor.swift */; };
-		OBJ_70 /* LEDBlinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* LEDBlinker.swift */; };
-		OBJ_71 /* LEDBlinker.temp_caseinsensitive_rename.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* LEDBlinker.temp_caseinsensitive_rename.swift */; };
 		OBJ_72 /* MotorHAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MotorHAT.swift */; };
 		OBJ_73 /* MotorSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MotorSpinner.swift */; };
-		OBJ_74 /* PWM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* PWM.swift */; };
 		OBJ_75 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Routine.swift */; };
 		OBJ_76 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* main.swift */; };
 		OBJ_78 /* SwiftyGPIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyGPIO::SwiftyGPIO::Product" /* SwiftyGPIO.framework */; };
@@ -74,11 +71,8 @@
 		AB44DF9D1FE5D99000E0B20C /* Adafruit_PWM_Servo_Driver.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Adafruit_PWM_Servo_Driver.py; sourceTree = "<group>"; };
 		AB44DF9E1FE5D99000E0B20C /* Adafruit_MotorHAT_Motors.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Adafruit_MotorHAT_Motors.py; sourceTree = "<group>"; };
 		AB44DF9F1FE5FE0F00E0B20C /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
-		OBJ_10 /* LEDBlinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.swift; sourceTree = "<group>"; };
-		OBJ_11 /* LEDBlinker.temp_caseinsensitive_rename.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBlinker.temp_caseinsensitive_rename.swift; sourceTree = "<group>"; };
 		OBJ_12 /* MotorHAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorHAT.swift; sourceTree = "<group>"; };
 		OBJ_13 /* MotorSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorSpinner.swift; sourceTree = "<group>"; };
-		OBJ_14 /* PWM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWM.swift; sourceTree = "<group>"; };
 		OBJ_15 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		OBJ_16 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_18 /* Libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Libraries; sourceTree = SOURCE_ROOT; };
@@ -263,11 +257,8 @@
 			children = (
 				AB44DF9B1FE5D99000E0B20C /* Adafruit_MotorHAT */,
 				OBJ_9 /* DCMotor.swift */,
-				OBJ_10 /* LEDBlinker.swift */,
-				OBJ_11 /* LEDBlinker.temp_caseinsensitive_rename.swift */,
 				OBJ_12 /* MotorHAT.swift */,
 				OBJ_13 /* MotorSpinner.swift */,
-				OBJ_14 /* PWM.swift */,
 				OBJ_15 /* Routine.swift */,
 				OBJ_16 /* main.swift */,
 				AB44DF981FE5D7B400E0B20C /* TestPython.swift */,
@@ -466,12 +457,9 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_69 /* DCMotor.swift in Sources */,
-				OBJ_70 /* LEDBlinker.swift in Sources */,
 				AB44DF991FE5D7B400E0B20C /* TestPython.swift in Sources */,
-				OBJ_71 /* LEDBlinker.temp_caseinsensitive_rename.swift in Sources */,
 				OBJ_72 /* MotorHAT.swift in Sources */,
 				OBJ_73 /* MotorSpinner.swift in Sources */,
-				OBJ_74 /* PWM.swift in Sources */,
 				OBJ_75 /* Routine.swift in Sources */,
 				OBJ_76 /* main.swift in Sources */,
 			);
