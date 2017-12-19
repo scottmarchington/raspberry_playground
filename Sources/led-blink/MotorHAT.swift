@@ -52,7 +52,7 @@ class MotorHAT {
         }
         
         print("Constructing HAT")
-        guard let motorHAT = motorHATClass.construct([0x00, 1600]) else {
+        guard let motorHAT = motorHATClass.construct([address, frequency]) else {
             print("Failed to init class with filled constructor")
             throw HATErrors.FailedToInitClass
         }
