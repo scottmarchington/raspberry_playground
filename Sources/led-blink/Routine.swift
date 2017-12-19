@@ -16,4 +16,5 @@ protocol Routine: class {
     static var humanReadableName: String { get }
     
     func start()
+    func stop()
 }

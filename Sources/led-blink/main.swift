@@ -22,6 +22,7 @@ while let userInput = readLine(strippingNewline: true),
     userInput != "exit" {
         if let routine = routines[userInput] {
             routine.start()
+            routine.stop()
         } else {
             print("Unrecognized routine")
         }
