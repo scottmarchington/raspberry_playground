@@ -64,6 +64,7 @@ class MotorHAT {
     }
     
     deinit {
+        print("DEINITING")
         turnOffAllMotors()
     }
     
