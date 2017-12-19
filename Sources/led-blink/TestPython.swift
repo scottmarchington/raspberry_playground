@@ -20,14 +20,6 @@ class TestPython {
             return
         }
         
-        print("Load fake thing")
-        if let fakeModule = motorsModule.load("AdaScott_McScottScott"),
-            let fakeObject = fakeModule.construct() {
-            print("found fake module?")
-            return
-        }
-        
-        
         
         print("Load hat class")
         guard let motorHatClass = motorsModule.load("Adafruit_MotorHAT") else {
@@ -35,20 +27,8 @@ class TestPython {
             return
         }
         
-        if let paradox = motorHatClass.load("Adafruit_MotorHAT_Motors") {
-            print("What a time to be alive, we've been going in circles")
-            return
-        }
-        
         if motorHatClass.construct() == nil {
             print("Failed to init class with empty constructor")
-        }
-        
-        
-        if let motorHat = motorHatClass.construct([]) {
-            print("Init class with all values")
-        } else {
-            print("Failed to init class with all values")
         }
         
         print("Before getting test module")
@@ -56,12 +36,18 @@ class TestPython {
         print("After getting test module")
         
         print("Loading HATFactory class")
-        guard let ourMotorHATClass = testModule.load("HATFactory") else {
-            print("Failed to load MotorHAT")
+        guard let hatFactoryClass = testModule.load("HATFactory") else {
+            print("Failed to load HATFactory")
             return
         }
         
-        if let factoryHAT = ourMotorHATClass.call("makeHAT") {
+        print("Constructing HATFactory")
+        guard let hatFactoryObject = hatFactoryClass.construct() else {
+            print("Unable to construct HATFactory")
+            return
+        }
+        
+        if let factoryHAT = hatFactoryObject.call("makeHAT") {
             print("MADE A HAT")
         } else {
             print("Didn't make a HAT")
